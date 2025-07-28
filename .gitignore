@@ -1,0 +1,28 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dylib
+*.dll
+
+# C extensions
+*.c
+*.o
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.eggs/
+*.wheel
+
+# If using Jupyter notebooks, cache
+.ipynb_checkpoints/
+
+# Logs and temp files
+*.log
+*.tmp

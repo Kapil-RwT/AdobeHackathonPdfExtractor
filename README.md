@@ -179,7 +179,7 @@ For queries, feature requests, or bug reports, please reach out to:
 
 HackSmiths
 
-Email: kapilrawat285@gmail.com, 
+Email: kapilrawat285@gmail.com, luvm1403@gmail.com
 
 GitHub: https://github.com/Kapil-RwT/AdobeHackathonPdfExtractor
 

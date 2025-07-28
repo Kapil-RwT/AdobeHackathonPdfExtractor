@@ -62,11 +62,8 @@ Place your input PDFs inside the `input/` directory (or bind mount any folder at
 ### 3. Run Round 1A: Document Outline Extraction
 
 ```
-docker run --rm \
-  -v "$(pwd)/input":/app/input \
-  -v "$(pwd)/output":/app/output \
-  --network none \
-  pdfdots:latest stage1
+docker run --rm -v "${PWD}\input:/app/input" -v "${PWD}\output:/app/output" --network none pdfdots:latest stage1
+
 ```
 
 - Processes all PDFs in `/app/input/`.
@@ -76,13 +73,8 @@ docker run --rm \
 ### 4. Run Round 1B: Persona-Based Insight Extraction
 
 ```
-docker run --rm \
-  -v "$(pwd)/input":/app/input \
-  -v "$(pwd)/output":/app/output \
-  --network none \
-  pdfdots:latest stage2 \
-  --persona "PhD Researcher in Computational Biology" \
-  --job "Write a literature review on GNNs for Drug Discovery"
+docker run --rm -v "${PWD}\input:/app/input" -v "${PWD}\output:/app/output" --network none pdfdots:latest stage2 --persona "Write persona here" --job "Write the job here"
+
 ```
 
 - Automatically loads Round 1A JSON outlines or runs extraction if missing.
